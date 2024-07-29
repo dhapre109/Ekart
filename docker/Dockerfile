@@ -14,9 +14,6 @@ RUN mvn clean package -DskipTests
 # Set the working directory
 WORKDIR /app
 
-# Copy the JAR file from the build stage
-// COPY --from=build /app/target/shopping-cart-0.0.1-SNAPSHOT.jar ./shopping-cart.jar
-
 # Expose the port the app runs on
 EXPOSE 9090
 
